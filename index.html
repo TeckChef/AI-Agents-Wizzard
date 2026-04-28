@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junior Therriault — Web Designer & Developer</title>
+    <meta
+      name="description"
+      content="Junior Therriault builds high-performance websites for personal brands and small businesses."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Junior Therriault home">Junior Therriault</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav>
+          <ul id="menu" class="menu">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <p class="kicker">Freelance Web Designer & Developer</p>
+            <h1>Websites that look sharp, load fast, and win clients.</h1>
+            <p class="lead">
+              I’m Junior Therriault. I help founders, creators, and local businesses launch
+              websites that communicate value clearly and turn visitors into inquiries.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#contact">Start a Project</a>
+              <a class="btn btn-ghost" href="#work">See My Work</a>
+            </div>
+            <ul class="stats" aria-label="Highlights">
+              <li><strong>40+</strong><span>Pages launched</span></li>
+              <li><strong>95+</strong><span>Average Lighthouse score</span></li>
+              <li><strong>24h</strong><span>Typical response time</span></li>
+            </ul>
+          </div>
+          <aside class="hero-card" aria-label="Quick profile">
+            <h2>Available for new projects</h2>
+            <p>
+              Need a new site, redesign, or conversion-focused landing page? I can help from strategy to launch.
+            </p>
+            <a class="btn btn-primary full" href="#contact">Book a Discovery Call</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <h2>Services</h2>
+          <p class="section-intro">Everything needed to launch a modern, reliable site.</p>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Website Design</h3>
+              <p>Clean, conversion-focused page layouts tailored to your audience and goals.</p>
+            </article>
+            <article class="card">
+              <h3>Website Development</h3>
+              <p>Fast, responsive builds with semantic HTML/CSS and maintainable structure.</p>
+            </article>
+            <article class="card">
+              <h3>Performance & SEO Basics</h3>
+              <p>On-page fundamentals that improve page speed, findability, and user experience.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="work">
+        <div class="container">
+          <h2>Selected Work</h2>
+          <div class="project-grid">
+            <article class="project">
+              <p class="tag">Personal Brand</p>
+              <h3>Coach Portfolio Redesign</h3>
+              <p>Refreshed messaging and layout to improve trust and call booking.</p>
+            </article>
+            <article class="project">
+              <p class="tag">Local Business</p>
+              <h3>Service Company Website</h3>
+              <p>Mobile-first redesign with clear service pages and lead-focused CTAs.</p>
+            </article>
+            <article class="project">
+              <p class="tag">Landing Page</p>
+              <h3>Offer Validation Campaign</h3>
+              <p>Single-page campaign used to test offer-market fit and collect leads.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div>
+            <h2>About Junior</h2>
+            <p>
+              I specialize in practical website solutions for people who need clarity, speed,
+              and real business outcomes. My process is simple: discover, design, build, and
+              optimize.
+            </p>
+          </div>
+          <blockquote class="quote">
+            “Junior helped us simplify our site and doubled our monthly inquiry volume in under
+            8 weeks.”
+            <cite>— Client testimonial</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container contact">
+          <h2>Let’s build your next website</h2>
+          <p>Tell me what you’re building and I’ll send back next steps.</p>
+          <a class="btn btn-primary" href="mailto:hello@junior-therriault.com">hello@junior-therriault.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Junior Therriault</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.getElementById('menu');
+      menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('open');
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
