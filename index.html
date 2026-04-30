@@ -156,6 +156,9 @@
             <label for="message">Biggest AI Bottleneck</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
+            <input type="hidden" name="_subject" value="New AI Audit Request" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
             <button class="btn btn-primary" type="submit">Send Audit Request</button>
           </form>
 
@@ -171,6 +174,12 @@
             Pay $50 with Stripe
           </a>
           <p class="payment-note">Replace this link with your live $50 Stripe Payment Link when ready.</p>
+          <h2>Secure Stripe Payment</h2>
+          <p>Ready to start now? Pay securely using Stripe and lock your audit slot.</p>
+          <a class="btn btn-primary" href="https://buy.stripe.com/test_4gw7sM0xM3fS4Yg8ww" target="_blank" rel="noopener noreferrer">
+            Pay with Stripe
+          </a>
+          <p class="payment-note">Replace this Stripe test link with your live Stripe Payment Link when ready.</p>
         </div>
       </section>
     </main>
