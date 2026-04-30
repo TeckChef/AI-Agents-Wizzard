@@ -161,6 +161,8 @@ h1 {
   padding: 0.72rem 1rem;
   text-decoration: none;
   font-weight: 800;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -210,7 +212,8 @@ h1 {
 .hero-card,
 .card,
 .project,
-.quote {
+.quote,
+.payment-card {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 0.9rem;
@@ -268,6 +271,45 @@ h1 {
 
 .contact {
   text-align: center;
+}
+
+.contact-form {
+  margin: 1.5rem auto 0;
+  max-width: 680px;
+  text-align: left;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.contact-form label {
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: #0b1530;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  padding: 0.7rem 0.75rem;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.contact-note,
+.payment-note {
+  color: var(--muted);
+  margin-top: 0.8rem;
+}
+
+.contact-note a {
+  color: var(--brand);
 }
 
 .site-footer {

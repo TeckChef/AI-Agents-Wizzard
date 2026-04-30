@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Agents Wizzard — AI Audit & Consultation :) </title>
+    <title>AI Agents Wizzard — AI Audit & Consultation</title>
     <meta
       name="description"
-      content="AI Agents Wizzard helps businesses implement AI Tier 1 to Tier 3 with an audit-first consulting service and a no-improvement, no-pay guarantee!."
+      content="AI Agents Wizzard helps businesses implement AI Tier 1 to Tier 3 with an audit-first consulting service and a no-improvement, no-pay guarantee."
     />
     <meta name="theme-color" content="#0b1020" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,7 +22,7 @@
 
     <header class="site-header" id="top">
       <div class="container nav-wrap">
-        <a class="brand" href="#top" aria-label="AI Agents Wizzard home">AI Agents Wizzard ;) </a>
+        <a class="brand" href="#top" aria-label="AI Agents Wizzard home">AI Agents Wizzard</a>
         <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle navigation">
           <span></span><span></span><span></span>
         </button>
@@ -32,6 +32,7 @@
             <li><a href="#tiers">AI Tiers</a></li>
             <li><a href="#process">Process</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#payment">Payment</a></li>
           </ul>
         </nav>
       </div>
@@ -49,7 +50,7 @@
               AI Advantage Summit, this is practical, results-first AI implementation.
             </p>
             <div class="cta-row">
-              <a class="btn btn-primary" href="#contact">Book Your AI Audit Now</a>
+              <a class="btn btn-primary" href="#contact">Book Your AI Audit</a>
               <a class="btn btn-ghost" href="#offer">See the Guarantee</a>
             </div>
             <ul class="stats" aria-label="Value highlights">
@@ -139,9 +140,37 @@
 
       <section class="section section-alt" id="contact">
         <div class="container contact">
-          <h2>Ready for your AI Advantage?</h2>
-          <p>Email me to schedule your AI Audit & Consultation.</p>
-          <a class="btn btn-primary" href="mailto:teckchef@gmail.com">teckchef@gmail.com</a>
+          <h2>Book Your AI Audit by Email</h2>
+          <p>Send your details below and we will reply with next steps within 24 hours.</p>
+
+          <form id="audit-form" class="contact-form" action="mailto:teckchef@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" />
+
+            <label for="message">Biggest AI Bottleneck</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Send Audit Request</button>
+          </form>
+
+          <p class="contact-note">Prefer direct email? <a href="mailto:teckchef@gmail.com">teckchef@gmail.com</a></p>
+        </div>
+      </section>
+
+      <section class="section" id="payment">
+        <div class="container contact payment-card">
+          <h2>Secure Stripe Payment</h2>
+          <p>Ready to start now? Pay securely using Stripe and lock your audit slot.</p>
+          <a class="btn btn-primary" href="https://buy.stripe.com/test_4gw7sM0xM3fS4Yg8ww" target="_blank" rel="noopener noreferrer">
+            Pay with Stripe
+          </a>
+          <p class="payment-note">Replace this Stripe test link with your live Stripe Payment Link when ready.</p>
         </div>
       </section>
     </main>
